@@ -1,0 +1,32 @@
+﻿<Page x:Class="PilsanOyuncakWpf.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PilsanOyuncakWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Login" Width="1366" Height="768">
+
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="White"/>
+        <Label Content="pilsanstore.com'a üye olun." FontSize="18" Foreground="Black" Margin="33,62,927,669"/>
+        <Label Content="Kaliteli ve garantili ürünler ile alışverişin keyfine varın." FontSize="15" Foreground="Black" Margin="33,98,975,625"/>
+        <Button x:Name="SignUp" Content="Hemen Üye Ol" Background="#3FAAC3" Foreground="White" Margin="33,143,1150,581" BorderThickness="0" />
+        <Button x:Name="Facebookile" Content="Facebook ile bağlan" Background="#3B5998" Foreground="White" Margin="223,143,950,581" BorderThickness="0" />
+        <Label Content="Kullanıcı Girişi" FontSize="18" Margin="594,62,490,669"/>
+        <Label Content="E-mail adresinizi ve şifrenizi girerek oturum açın." FontSize="18" Margin="576,92,391,638"/>
+        <Image Source="for_email.png" Margin="566,135,740,571"/>
+        <Image Source="for_password.png" Margin="860,135,446,571"/>
+        <TextBox x:Name="email" Text="&#xD;&#xA;E-mail adresinizi giriniz" Margin="626,134,511,571" FontSize="15" HorizontalAlignment="Center" TextChanged="email_TextChanged" Width="229"/>
+        <TextBox x:Name="Şifreniz" Text="&#xD;&#xA;Şifreniz" Margin="926,134,211,571" FontSize="15" HorizontalAlignment="Center" TextChanged="email_TextChanged" Width="229"/>
+        <Button x:Name="Girisyap" Content="Giriş Yap" FontSize="18" Foreground="White" Background="#F11516" Margin="1183,134,10,564"/>
+
+
+
+    </Grid>
+</Page>

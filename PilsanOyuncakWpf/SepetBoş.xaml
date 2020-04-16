@@ -1,0 +1,19 @@
+﻿<Page x:Class="PilsanOyuncakWpf.SepetBoş"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PilsanOyuncakWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="768" d:DesignWidth="1366"
+      Title="SepetBoş">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background="White"/>
+        <Label Content="Alışveriş sepetinizde ürün bulunmamaktadır." FontSize="20" Foreground="Black" Margin="444,346,360,172"/>
+        <Image Source="sepetbos.png" Margin="544,217,602,427"/>
+    </Grid>
+</Page>

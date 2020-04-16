@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8D62F95B-5F01-45BF-8178-DB61F92C904F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PilsanOyuncakWpf</RootNamespace>
+    <AssemblyName>PilsanOyuncakWpf</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AkuluGrup.xaml.cs">
+      <DependentUpon>AkuluGrup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AkuluGrup2.xaml.cs">
+      <DependentUpon>AkuluGrup2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Sepet.xaml.cs">
+      <DependentUpon>Sepet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SepetBoş.xaml.cs">
+      <DependentUpon>SepetBoş.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="test.xaml.cs">
+      <DependentUpon>test.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AkuluGrup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AkuluGrup2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Sepet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SepetBoş.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="test.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pilsan_Image\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pilsan_Image\facebook.png" />
+    <Resource Include="pilsan_Image\google+.png" />
+    <Resource Include="pilsan_Image\instagram.png" />
+    <Resource Include="pilsan_Image\kredikarti.png" />
+    <Resource Include="pilsan_Image\settings.png" />
+    <Resource Include="pilsan_Image\teknikdestek.png" />
+    <Resource Include="pilsan_Image\telefonlasiparis.png" />
+    <Resource Include="pilsan_Image\twitter.png" />
+    <Resource Include="pilsan_Image\youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kargoTakip.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SearchText.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="searchButton.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pilsan_Image\myAccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="myAccount.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="addtoShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picSlider\Slider1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picSlider\slider10.jpg" />
+    <Resource Include="picSlider\slider10Logo.jpg" />
+    <Resource Include="picSlider\slider1Logo.jpg" />
+    <Resource Include="picSlider\slider2.jpg" />
+    <Resource Include="picSlider\slider2Logo.jpg" />
+    <Resource Include="picSlider\slider3.jpg" />
+    <Resource Include="picSlider\slider3Logo.jpg" />
+    <Resource Include="picSlider\slider4.jpg" />
+    <Resource Include="picSlider\slider4Logo.jpg" />
+    <Resource Include="picSlider\slider5.jpg" />
+    <Resource Include="picSlider\slider5Logo.jpg" />
+    <Resource Include="picSlider\slider6.jpg" />
+    <Resource Include="picSlider\slider6Logo.jpg" />
+    <Resource Include="picSlider\slider7Logo.jpg" />
+    <Resource Include="picSlider\slider8.jpg" />
+    <Resource Include="picSlider\slider8Logo.jpg" />
+    <Resource Include="picSlider\slider9.jpg" />
+    <Resource Include="picSlider\slider9Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picSlider\slider7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider1Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider2Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider3Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider4Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider5Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider7Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider8Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider9Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="slider10Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="teknikdestek.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="telefonlasiparis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="100TL.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kredikarti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="niloya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="winx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="hello_kitty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pepee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="e-Mail.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="kayıt_Ol.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="google+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="youtube.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="krediKartlari.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="testmaster.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="KrediKartlariLogo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Kredibanner_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="musaSoft.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picHolder2\yunusbisiklet1.PNG" />
+    <Resource Include="picHolder2\yunusbisiklet2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picHolder3\oyunalani2.jpg" />
+    <Resource Include="picHolder3\oyunalani3.jpg" />
+    <Resource Include="picHolder3\oyunalani4.jpg" />
+    <Resource Include="picHolder3\oyunalani1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picHolder4\sallananat1.jpg" />
+    <Resource Include="picHolder4\sallananat2.jpg" />
+    <Resource Include="picHolder4\sallananat3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="picHolder5\suvekum2.jpg" />
+    <Resource Include="picHolder5\suvekum1.jpg" />
+    <Resource Include="picHolder5\suvekum3.jpg" />
+    <Resource Include="picHolder5\suvekum4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blackLine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="for_email.PNG" />
+    <Resource Include="for_password.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sepetbos.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="addtocart.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="AkuluGrup\apache\apache1.jpg" />
+    <Resource Include="AkuluGrup\apache\apache2.jpg" />
+    <Resource Include="AkuluGrup\apache\apache3.jpg" />
+    <Resource Include="AkuluGrup\blackthunder\blackthunder1.jpg" />
+    <Resource Include="AkuluGrup\blackthunder\blackthunder2.jpg" />
+    <Resource Include="AkuluGrup\blackthunder\blackthunder3.jpg" />
+    <Resource Include="AkuluGrup\chopper\chopper1.jpg" />
+    <Resource Include="AkuluGrup\chopper\chopper2.jpg" />
+    <Resource Include="AkuluGrup\chopper\chopper3.jpg" />
+    <Resource Include="AkuluGrup\fantastik\fantastic3.jpg" />
+    <Resource Include="AkuluGrup\fantastik\fantastik1.jpg" />
+    <Resource Include="AkuluGrup\fantastik\fantastik2.jpg" />
+    <Resource Include="AkuluGrup\panzer\panzer1.jpg" />
+    <Resource Include="AkuluGrup\panzer\panzer2.jpg" />
+    <Resource Include="AkuluGrup\panzer\panzer3.jpg" />
+    <Resource Include="AkuluGrup\prenses\prenses1.jpg" />
+    <Resource Include="AkuluGrup\prenses\prenses2.jpg" />
+    <Resource Include="AkuluGrup\prenses\prenses3.jpg" />
+    <Resource Include="AkuluGrup\rocket\rocket1.jpg" />
+    <Resource Include="AkuluGrup\rocket\rocket2.jpg" />
+    <Resource Include="AkuluGrup\rocket\rocket3.jpg" />
+    <Resource Include="AkuluGrup\snappy\snappy1.jpg" />
+    <Resource Include="AkuluGrup\snappy\snappy2.jpg" />
+    <Resource Include="AkuluGrup\snappy\snappy3.jpg" />
+    <Resource Include="AkuluGrup\super\super1.jpg" />
+    <Resource Include="AkuluGrup\super\super2.jpg" />
+    <Resource Include="AkuluGrup\super\super3.jpg" />
+    <Resource Include="AkuluGrup\tostos12\tostos1.jpg" />
+    <Resource Include="AkuluGrup\tostos12\tostos2.jpg" />
+    <Resource Include="AkuluGrup\tostos12\tostos3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tostos1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tostos2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="panzer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="snappy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="rocket1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="chopper1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="super1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="prenses1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="apache1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blackthunder1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="fantastic3.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,606 @@
+﻿<Window x:Class="PilsanOyuncakWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PilsanOyuncakWpf"
+        mc:Ignorable="d"
+        Title="Pilsan Store" Height="3250" Width="1366" Icon="logo.png" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowState="Maximized">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="84"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="84"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Background= "#d1f3ff"/>
+        <Border Grid.Column="2" Background= "#d1f3ff"/>
+        <Border Grid.Column="1">
+            <ScrollViewer Margin="-1,0,1,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="11*"/>
+                        <ColumnDefinition Width="380*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="550"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="500"/>
+                        <RowDefinition Height="550"/>
+                        <RowDefinition Height="1300"/>
+
+
+
+                    </Grid.RowDefinitions>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Border>
+                            <Button Width="200" Height="84" Margin="31,10,942,11" BorderThickness="0" Name="Logo">
+                                <Button.Background>
+                                    <ImageBrush ImageSource="pilsan_Image/logo.png"/>
+                                </Button.Background>
+
+                            </Button>
+                        </Border>
+
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="264,34,843,31" BorderThickness="0" Name="yedekParca" Click="yedekParca_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="settings.png" Stretch="Uniform"/>
+                            </Button.Background>
+
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Width="75" Height="30" Margin="324,56,773,29" Background="White" BorderThickness="0">
+                            <Label Content="Yedek Parça" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Margin="416,34,685,23" BorderThickness="0" Name="kargoTakip">
+                            <Button.Background>
+                                <ImageBrush ImageSource="kargoTakip.PNG" Stretch="Uniform"/>
+                            </Button.Background>
+                        </Button>
+
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Width="75" Height="30" Margin="488,52,609,33" Background="White" BorderThickness="0">
+                            <Label Content="Kargo Takip" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <TextBox BorderThickness="0" Height="50" Margin="580,39,353,26" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="14" Text="Site içi arama yapınız" SpellCheck.IsEnabled="True">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="SearchText.PNG"/>
+                            </TextBox.Background>
+                        </TextBox>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Margin="812,43,314,32" BorderThickness="0" Name="button_Search" Height="40" Width="47">
+                            <Button.Background>
+                                <ImageBrush ImageSource="searchButton.PNG" TileMode="Tile" Stretch="UniformToFill"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Margin="889,42,226,32" BorderThickness="0" x:Name="myAccount" Click="Login_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="myAccount.png" Stretch="Uniform"/>
+                            </Button.Background>
+
+
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Margin="-1,0,1,0" Grid.ColumnSpan="2">
+                        <Button Width="75" Height="30" Margin="956,57,142,48" Background="White" BorderThickness="0" x:Name="Login" Click="Login_Click">
+                            <Label Content="Hesabım" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Grid.ColumnSpan="2">
+                        <Button Margin="1049,51,84,44" BorderThickness="0" Height="40" Width="40" Click="Sepetim_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="addtoShop.png"/>
+                            </Button.Background>
+
+                        </Button>
+                    </Border>
+                   
+                        <Border Grid.Row="0">
+                            <TextBox Text="0" Margin="1050,46,-1037,97" FontSize="17" Background="Red" Foreground="White"/>
+                        </Border>
+                    
+                    <Border Grid.Row="0" Margin="-1,0,1,0" Grid.ColumnSpan="2">
+                        <Button Height="30" Margin="1093,44,16,61" Background="White" BorderThickness="0" x:Name="Sepetim" Click="Sepetim_Click">
+                            <Label Content="Sepetim" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="0" Margin="-1,0,1,0" Grid.ColumnSpan="2">
+                        <Button Height="30" Margin="1093,69,16,36" Background="White" BorderThickness="0">
+                            <Label Content="0.00" HorizontalContentAlignment="Stretch" HorizontalAlignment="Right" Foreground="Red" FontWeight="Bold"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Margin="-1,0,1,0" Background="Red" Grid.ColumnSpan="2">
+
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="33,0,1040,0" Background="Red" BorderThickness="0" x:Name="AkuluAraba" Click="AkuluAraba_Click">
+                            <Label Content="Akülü Araba" Foreground="White" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="125,0,948,0" Background="Red" BorderThickness="0">
+                            <Label Content="Zincirli ve &#xD;&#xA;   Pedallı" Foreground="White" Height="53" HorizontalAlignment="Center" VerticalAlignment="Center" Width="102" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="204,0,869,0" Background="Red" BorderThickness="0">
+                            <Label Content="Pedalsız &#xD;&#xA;  Grup" Foreground="White" Height="51" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="273,0,800,0" Background="Red" BorderThickness="0">
+                            <Label Content="    Bisiklet" Foreground="White" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="354,0,719,0" Background="Red" BorderThickness="0">
+                            <Label Content="   Sallanan&#xD;&#xA; Oyuncaklar" Foreground="White" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="449,0,624,0" Background="Red" BorderThickness="0">
+                            <Label Content=" Park ve &#xD;&#xA;  Bahçe" Foreground="White" Height="51" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="522,0,551,0" Background="Red" BorderThickness="0">
+                            <Label Content="Zeka Eğitim&#xD;&#xA; ve Spor" Foreground="White" Height="57" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="614,0,459,0" Background="Red" BorderThickness="0">
+                            <Label Content="Kamyon ve&#xD;&#xA; Dozerler" Foreground="White" Height="53" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="702,0,371,0" Background="Red" BorderThickness="0">
+                            <Label Content="Mini Mekanik &#xD;&#xA;     Serisi" Foreground="White" Height="51" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="806,0,267,0" Background="Red" BorderThickness="0">
+                            <Label Content="Bebek Çocuk&#xD;&#xA; Gereçleri" Foreground="White" Height="54" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Width="100" Margin="903,0,170,0" Background="Red" BorderThickness="0">
+                            <Label Content="Yazlık &#xD;&#xA;Oyuncaklar" Foreground="White" Height="51" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Margin="985,0,112,0" Background="Red" BorderThickness="0">
+                            <Label Content="Lisanslı&#xD;&#xA;Ürünler" Foreground="White" Height="52" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="1" Grid.ColumnSpan="2">
+                        <Button Margin="1053,0,30,0" Background="Red" BorderThickness="0">
+                            <Label Content=" Set Ürünler" Foreground="White" Height="40" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" FontSize="15" BorderThickness="0"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button x:Name="go_Slider1" Width="60" Margin="77,452,1036,38" Height="60" Click="Go_Slider1_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider1Logo.jpg" Stretch="None"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button x:Name="go_slider2" Width="60" Margin="172,453,941,37" Height="60" Click="go_slider2_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider2Logo.jpg" Stretch="Uniform"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button x:Name="go_Slider3" Click="go_Slider3_Click" Width="60" Margin="266,453,847,37" Height="60">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider3Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button x:Name="go_Slider4" Click="go_Slider4_Click" Width="60" Margin="360,453,753,37" Height="60">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider4Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="459,454,654,36" Height="60" Click="go_Slider5_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider5Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="564,454,549,36" Height="60" Click="go_Slider6_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider6.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="663,454,450,36" Height="60" Click="go_Slider7_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider7Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="769,454,344,36" Height="60" Click="go_Slider8_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider8Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="878,454,235,36" Height="60" Click="go_Slider9_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider9Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button Width="60" Margin="991,454,122,36" Height="60" Click="go_Slider10_Click">
+                            <Button.Background>
+                                <ImageBrush ImageSource="slider10Logo.jpg"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+
+
+                    <Border Grid.Row="2" Grid.ColumnSpan="2">
+                        <Button  Margin="0,14,0,141" Click="Button_Click_SliderResponse" >
+                            <Image Name="picHolder" Source="picSlider/Slider1.jpg" Height="395" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+
+                    <Border Grid.Row="3" Grid.ColumnSpan="2">
+                        <Image Source="telefonlasiparis.png" Height="100" Margin="5,0,908,0"/>
+                    </Border>
+                    <Border Grid.Row="3" Grid.ColumnSpan="2">
+                        <Image Source="teknikdestek.png" Height="100" Margin="283,0,627,0"/>
+                    </Border>
+                    <Border Grid.Row="3" Grid.ColumnSpan="2">
+                        <Image Source="100TL.png" Height="100" Margin="565,0,329,0"/>
+                    </Border>
+                    <Border Grid.Row="3" Grid.ColumnSpan="2">
+                        <Image Source="kredikarti.png" Height="100" Margin="867,0,27,0"/>
+                    </Border>
+
+
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Label Content="       Pilsanstore &#xD;&#xA;       Ürünlerini" Width="240" Margin="6,36,927,378" FontSize="28" />
+
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Label Content="Keşfedin!" Foreground="Red" Height="50" Margin="63,103,974,347" FontSize="28" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="29,195,915,246" FontSize="18" FontWeight="Bold" Background="Red" BorderThickness="0">
+                            <Label Content="Öne Çıkan Ürünler" Foreground="White" Width="171"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="29,258,915,183" FontSize="18" FontWeight="Bold" Background="White" BorderThickness="0">
+                            <Label Content="Sizin için Seçtiklerimiz" Width="205"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="31,316,913,125" FontSize="18" FontWeight="Bold" Background="White" BorderThickness="0">
+                            <Label Content="En çok Satanlar" Width="205"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="31,369,913,72" FontSize="18" FontWeight="Bold" Background="White" BorderThickness="0">
+                            <Label Content="İndirimdekiler" Width="205"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="33,426,911,15" FontSize="18" FontWeight="Bold" Background="White" BorderThickness="0">
+                            <Label Content="En Yeniler" Width="205"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="298,54,664,100" BorderThickness="0">
+                            <Image x:Name="picHolder2" Source="picHolder2/yunusbisiklet1.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="331,411,799,55" Background="White" BorderThickness="0" x:Name="go_yunusBisiklet" Click="go_yunusBisiklet_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="399,411,731,55" Background="White" BorderThickness="0" x:Name="go_yunusBisiklet2" Click="go_yunusBisiklet2_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button BorderThickness="0" Margin="554,57,423,104">
+                            <Image x:Name="picHolder3" Source="picHolder3/oyunalani1.jpg" Stretch="Fill" Width="196"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Background="White" BorderThickness="0"  Margin="558,405,579,51" x:Name="go_oyunAlani1" Click="go_oyunAlani1_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Background="White" BorderThickness="0"  Margin="603,407,534,54" x:Name="go_oyunAlani2" Click="go_oyunAlani2_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Background="White" BorderThickness="0"  Margin="650,406,487,53" x:Name="go_oyunAlani3" Click="go_oyunAlani3_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Background="White" BorderThickness="0"  Margin="698,407,439,54" x:Name="go_oyunAlani4" Click="go_oyunAlani4_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button  BorderThickness="0" Margin="771,62,218,100">
+                            <Image x:Name="picHolder4" Source="picHolder4/sallananat1.jpg" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button  Background="White" BorderThickness="0" x:Name="go_sallananAt1" Click="go_sallananAt1_Click" Margin="772,407,354,51">
+                            <Image Source="blackLine.png" Stretch="Fill" Height="32"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button  Background="White" BorderThickness="0" x:Name="go_sallananAt2" Click="go_sallananAt2_Click" Margin="835,407,289,51">
+                            <Image Source="blackLine.png" Stretch="Fill" Height="32"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button  Background="White" BorderThickness="0" x:Name="go_sallananAt3" Click="go_sallananAt3_Click" Margin="896,407,233,51">
+                            <Image Source="blackLine.png" Stretch="Fill" Height="32"/>
+                        </Button>
+                    </Border>
+
+
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button  BorderThickness="0" Margin="977,62,10,102">
+                            <Image x:Name="picHolder5" Source="picHolder5/suvekum1.jpg" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="980,410,160,56" Background="White" BorderThickness="0" x:Name="go_suvekum1" Click="go_suvekum_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="1026,410,114,56" Background="White" BorderThickness="0" x:Name="go_suvekum2" Click="go_suvekum2_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="1069,410,71,56" Background="White" BorderThickness="0" x:Name="go_suvekum3" Click="go_suvekum3_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="4" Grid.ColumnSpan="2">
+                        <Button Margin="1115,410,25,56" Background="White" BorderThickness="0" x:Name="go_suvekum4" Click="go_suvekum4_Click">
+                            <Image Source="blackLine.png" Stretch="Fill"/>
+                        </Button>
+                    </Border>
+
+
+
+                    <Border Grid.Row="5" Grid.ColumnSpan="2">
+                        <Button Width="500" Margin="36,25,637,10" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="niloya.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="5" Grid.ColumnSpan="2">
+                        <Button Height="250" Margin="561,27,13,273" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="winx.jpg" Stretch="None"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="5" Grid.ColumnSpan="2">
+                        <Button Height="250" Margin="569,291,315,9" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="pepee.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="5" Grid.ColumnSpan="2">
+                        <Button Height="250" Margin="873,291,11,9" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="hello_kitty.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Pilsan Store - Pilsan Plastik Oyuncak ve Sanayi A.Ş" FontSize="18" Width="500" Height="50" Margin="40,29,633,1221" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Biz" FontSize="18" Margin="40,98,1089,1163" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label BorderThickness="0" Content=" Hikâyemiz 1940'lı yıllarda başladı. Taş plak dinlemenin, haberleri ajanstan takip etmenin ve tahsil için Avrupa'ya gitmenin moda olduğu zamanlardı... Dönemin zorlu koşullarına rağmen, &#xA; kurucumuz Yakup Çetinalp oyuncakları o kadar seviyordu ki, çalıştığı sektörü değiştirip oyuncak dünyasına adım attı. O yıllarda kurşun askerlerle başlayan yolculuğumuz, her yaş grubundan&#xD;&#xA; çocuğa hitap eden, yüzlerce çeşit ürünle devam ediyor. Sadece çocuklar mı? Yaşı kaç olursa olsun, içindeki çocuğu kaybetmeyen herkese göre bir oyuncağımız var. Dönemin efsaneleri arasına&#xA; giren Kuzey Kalesi, hemen her çocuğun rüyası akülü arabalar ya da sevimli bir kaydırak…" FontSize="13" Margin="40,141,50,1075"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label BorderThickness="0" Content="Vizyonumuz" FontSize="18" Height="50" Margin="49,234,1003,1016" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label BorderThickness="0" Content=" Sağlıklı hammaddeden üretilen, kaliteli ve eğlenceli oyuncaklara ulaşmanın her çocuğun hakkı olduğunu düşünüyoruz ve teknolojiyi hayal gücüyle birleştirip, her yıl oyuncaklarımızı dünya çapında&#xD;&#xA; daha fazla çocuğa ulaştırarak sektöre öncülük ediyoruz. Bu anlayıştan yola çıkarak, ülkemizde edindiğimiz sektör liderliğini dünya çapında yakalamak istiyoruz." FontSize="13" Margin="43,294,89,947"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label BorderThickness="0" Content="Misyonumuz" FontSize="18" Height="50" Margin="49,356,1003,894" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label BorderThickness="0" Content=" Çocukları seviyoruz ve oyuncaklarımız rengârenk olsa da hayatın gerçek renklerinin onlar olduğunu biliyoruz. Bu nedenle tüm ürünlerimiz profesyonel ekibimiz tarafından, titizlikle tasarlanıyor ve&#xD;&#xA; çocuk sağlığına, gelişimine uygun şekilde üretiliyor. Amacımız sadece çocukları eğlendirmek değil, onların zihinsel ve fiziksel gelişimlerine katkı sağlamak. Çevreye saygılı, yenilikçi, modern&#xD;&#xA; üretim anlayışımızla ve birbirinden eğlenceli ürünlerimizle dünyadaki her çocuğun hayatına dokunmak istiyoruz." FontSize="13" Margin="47,411,12,793"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Kurumsal" Height="50" Margin="54,521,1012,729" FontSize="20" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="53,568,1016,682" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Hakkımızda" Width="96" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="55,616,1014,634" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Blog" Width="96" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="56,663,982,587" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Online Katalog" Width="125" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="56,701,1013,549" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="İletişim" Width="96" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Alışveriş" Height="50" Margin="312,521,754,729" FontSize="20" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Margin="-8,0,8,0" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="315,568,718,682" FontSize="15" Background="White" BorderThickness="0">
+                            <Label Content="Satış Sözleşmesi" Width="130" Height="50" FontSize="17"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="51" Margin="309,616,703,633" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Gizlilik ve Güvenlik" Width="151" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="312,663,726,587" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="İade ve Değişim" Width="135" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="311,704,727,546" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Ödeme Teslimat" Width="135" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Height="50" Margin="312,749,726,501" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Online Katalog" Width="135" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Yardım" Height="50" Margin="572,523,494,727" FontSize="20" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Margin="570,567,454,696" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Müşteri Hizmetleri" Width="150" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Margin="571,615,453,648" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Üyelik" Width="150" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Margin="571,665,453,598" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Kargo Takip" Width="150" Height="50"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Margin="570,705,422,558" FontSize="17" Background="White" BorderThickness="0">
+                            <Label Content="Havale Bildirim Formu" Width="181" Height="37"/>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="E-Bültene Kayıt Olun" Height="50" Margin="815,523,132,727" FontSize="20" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Haber listemize ücretsiz kayıt olarak kampanyalardan haberdar olun" Margin="758,564,10,693" FontSize="13"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <TextBox Text="E-mail adresinizi yazınız" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="772,614,139,617" FontSize="15">
+                            <TextBox.Background>
+                                <ImageBrush ImageSource="e-Mail.PNG"/>
+                            </TextBox.Background>
+                        </TextBox>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Margin="1033,613,24,614" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="kayıt_Ol.PNG"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content="Bizi Takip edin " Margin="771,761,202,496" FontSize="20" Width="200" FontWeight="Bold"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Width="34" Height="34" Margin="773,832,350,418" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="facebook.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Width="34" Height="34" Margin="843,831,280,419" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="twitter.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Width="34" Height="34" Margin="913,830,210,420" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="google+.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Width="34" Height="34" Margin="982,830,141,420" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="instagram.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Button Width="34" Height="34" Margin="1058,830,65,420" BorderThickness="0">
+                            <Button.Background>
+                                <ImageBrush ImageSource="youtube.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Label Content=" 2017 Copyright ©pilsanstore.com&#xD;&#xA; 256Bit SSL Sertifikası ile Güvenli Alışveriş" Margin="43,994,846,252" FontSize="14"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Image Source="Kredibanner_14.png" Margin="457,997,35,262" Stretch="Fill"/>
+                    </Border>
+                    <Border Grid.Row="6" Grid.ColumnSpan="2">
+                        <Image Source="musaSoft.png" Margin="499,1121,524,29" Stretch="Fill" Height="150" Width="150"/>
+                    </Border>
+
+                </Grid>
+            </ScrollViewer>
+        </Border>
+    </Grid>
+
+</Window>
