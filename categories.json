@@ -1,0 +1,54 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Akülü Grup"
+  },
+  {
+    "Id": 2,
+    "Name": "Zincirli ve Pedallı"
+  },
+  {
+    "Id": 3,
+    "Name": "Pedalsız Grup"
+  },
+  {
+    "Id": 4,
+    "Name": "Bisikletler"
+  },
+  {
+    "Id": 5,
+    "Name": "Sallanan Oyuncaklar"
+  },
+  {
+    "Id": 6,
+    "Name": "Park ve Bahçe"
+  },
+  {
+    "Id": 7,
+    "Name": "Zeka, Eğitim ve Spor"
+  },
+  {
+    "Id": 8,
+    "Name": "Kamyon ve Dozerler"
+  },
+  {
+    "Id": 9,
+    "Name": "Mini Mekanik Serisi"
+  },
+  {
+    "Id": 10,
+    "Name": "Bebek ve Çocuk Gereçleri"
+  },
+  {
+    "Id": 11,
+    "Name": "Yazlık Oyuncaklar"
+  },
+  {
+    "Id": 12,
+    "Name": "Lisanslı Ürünler"
+  },
+  {
+    "Id": 13,
+    "Name": "Set Ürünler"
+  }
+]

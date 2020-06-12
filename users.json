@@ -1,0 +1,18 @@
+﻿[
+  {
+    "Id": 1,
+    "Name": "Musa",
+    "Email": "musakavus@gmail.com",
+    "Password": "1234",
+    "Gender": "Male",
+    "PhoneNumber": "5456646757"
+  },
+  {
+    "Id": 2,
+    "Name": "Huseyin savran",
+    "Email": "huseyinsavran@gmail.com",
+    "Password": "123456",
+    "Gender": "Male",
+    "PhoneNumber": "54654653"
+  }
+]

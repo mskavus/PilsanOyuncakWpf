@@ -1,0 +1,243 @@
+﻿[
+  {
+    "Id": 1,
+    "Page_Number": 1,
+    "Name": "Tostos Akülü Araba 12 V Kumandalı",
+    "Price": 1719.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+	
+  },
+  {
+    "Id": 2,
+    "Page_Number": 1,
+    "Name": "Attack Uzaktan Kumandalı Çift Kişilik Akülü Araba",
+    "Price": 2099.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 3,
+    "Page_Number": 1,
+    "Name": "Panzer 4x4 Çift Kişilik Akülü Araba",
+    "Price": 2379.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 4,
+    "Page_Number": 1,
+    "Name": "Snappy 12V Akülü Araba",
+    "Price": 1419.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 5,
+    "Page_Number": 1,
+    "Name": "Rocket 12V Akülü ATV",
+    "Price": 1419.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 6,
+    "Page_Number": 1,
+    "Name": "Chopper 12V Akülü Motor",
+    "Price": 1419.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 7,
+    "Page_Number": 1,
+    "Name": "Super 12V Akülü Traktör Yeşil",
+    "Price": 1419.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 8,
+    "Page_Number": 1,
+    "Name": "Prenses 12V Akülü Araba",
+    "Price": 1749.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 9,
+    "Page_Number": 1,
+    "Name": "Apache 12V Akülü Araba",
+    "Price": 1749.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 10,
+    "Page_Number": 1,
+    "Name": "Black Thunder 12V Akülü Araba",
+    "Price": 1749.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 11,
+    "Page_Number": 2,
+    "Name": "Fantastik 12V Uzaktan Kumandalı Akülü Araba",
+    "Price": 1889.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 12,
+    "Page_Number": 2,
+    "Name": "Storm 12V Akülü Motor",
+    "Price": 1259.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 13,
+    "Page_Number": 2,
+    "Name": "Spear 12V Akülü ATV",
+    "Price": 899.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 14,
+    "Page_Number": 2,
+    "Name": "Active Akülü Traktör 6V",
+    "Price": 419.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 15,
+    "Page_Number": 2,
+    "Name": "Shadow Akülü Motor",
+    "Price": 1479.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 16,
+    "Page_Number": 2,
+    "Name": "Fortune 12 V Uzaktan Kumandalı Araba",
+    "Price": 1569.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 17,
+    "Page_Number": 2,
+    "Name": "Dynamıc 12 V Akülü Araba",
+    "Price": 649.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 18,
+    "Page_Number": 2,
+    "Name": "Panter 12 V Uzaktan Kumandalı Akülü Araba",
+    "Price": 1199.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 19,
+    "Page_Number": 2,
+    "Name": "Attack Çift Kişilik Akülü Araba",
+    "Price": 1899.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 20,
+    "Page_Number": 2,
+    "Name": "Tery Bery 12 V Uzaktan Kumandalı Araba",
+    "Price": 1569.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 21,
+    "Page_Number": 3,
+    "Name": "Ranger Akülü Uzaktan Kumandalı Araba",
+    "Price": 1569.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Var"
+  },
+  {
+    "Id": 22,
+    "Page_Number": 3,
+    "Name": "Forza Akülü Uzaktan Kumandalı Araba Kırmızı",
+    "Price": 1459.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Kalmadı. Gelince Haber Ver"
+  },
+  {
+    "Id": 23,
+    "Page_Number": 3,
+    "Name": "Wind 12 V Motor Kırmızı",
+    "Price": 1109.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Kalmadı. Gelince Haber Ver"
+  },
+  {
+    "Id": 24,
+    "Page_Number": 24,
+    "Name": "Semih",
+    "Price": 1.9,
+    "QuantityInPackage": 1,
+    "Color": "Kırmızı",
+    "CategoryId": 1,
+    "Description": "Stokta Kalmadı. Gelince Haber Ver"
+  }
+]
